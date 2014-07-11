@@ -17,7 +17,7 @@
 
         @if (Auth::guest())
         
-          <li>{{ link_to_route('signup.store', 'Sign Up')}}</li>
+          <li>{{ link_to_route('signup.store', 'Sign Up',null,  ['class'=>'signup'])}}</li>
           <li><a href="/login">Login</a></li>
         
         @else
