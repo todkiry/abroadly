@@ -4,9 +4,22 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<h2>{{ $username }} asked a question</h2>
+		<img src="http://abroadly.in/img/logo.png" alt="abroadly"/>
+		<h2>Question about {{ $place }} </h2>
+
+		<p>
+			{{ $username }} asked a question about {{ $place }}
+		</p>
+
+
+		<blockquote>
+			<h4>{{ $header }} </h4>
+			{{ $question }}
+		</blockquote>
 
 		<div>
 		</div>
+
+		<strong><a href="http://abroadly.in/questions/{{ $id }}">Answer question</a></strong>
 	</body>
 </html>

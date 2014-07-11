@@ -45,15 +45,20 @@ class QuestionsController extends \BaseController {
 
 
 
+
+
+		# Send Email
+
 		$data = [
 			'username'=> $question->user->name,
 			'question'=> $question->question,
+			'place' => $question->place->place,
+			'header' => $question->header,
+			'id' => $question->id,
 		];
-
-		# Send Email
 		Mail::send('emails.question', $data, function($message)
 		{
-			$message->to('todkiry@gmail.com')->subject('Test');
+			$message->to('todkiry@gmail.com')->subject('New abroadly question');
 		});
 
 
