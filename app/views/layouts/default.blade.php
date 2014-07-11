@@ -7,8 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="/css/main.css"/>
-	<meta charset="UTF-8">
-</head>
+<link href='http://fonts.googleapis.com/css?family=Raleway:100,300,500' rel='stylesheet' type='text/css'></head>
     <body>
 
     	@include('layouts.partials.nav')

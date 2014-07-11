@@ -20,10 +20,14 @@ html {
 
 .navbar {
 	min-height: 86px;
+
 }
 
 .navbar-nav {
 	margin-top:19px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	float:right;
 }
 
 .navbar-toggle {
@@ -31,6 +35,25 @@ html {
 	margin-bottom:25px;
 
 }
+
+a {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;	
+
+}
+
+.navbar-brand {
+
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+}
+
+h1, h2, h3 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;	
+
+}
+
 .col-centered 
 {
     float: none;
@@ -41,5 +64,12 @@ html {
 {
 	text-align:left;
 	bottom:300px;
+	text-shadow:none;
+	color:#333;
+}
 
+.carousel-caption h3 {
+	
+		font-family: 'Raleway', sans-serif;
+	font-weight: 500;	
 }
