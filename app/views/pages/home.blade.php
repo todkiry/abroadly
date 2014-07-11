@@ -3,16 +3,8 @@
 
 @section('content')
 
-        
-        <h1>Abroadly</h1>
-
-
 		@if (Auth::guest())
 
-		<p>The interactive Q&amp;A platform for students going abroad. Get personal travel tips and recommendations from students in your college community.</p>
-	        <p>{{ link_to_route('signup.store', 'Sign up', null, ['class' => 'btn btn-lg btn-primary']); }}
-	        	{{ link_to_route('login', 'Login', null, ['class' => 'btn btn-lg']); }}
-	        </p>
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -26,18 +18,31 @@
   <div class="carousel-inner">
     <div class="item active">
       <img src="/img/hero1.jpg" alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
-    </div>
-    <div class="item">
-      <img src="..." alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
-    </div>
-    ...
+ <div class="carousel-caption">
+    <h3>Going abroad for the first time?</h3>
+    <p>The interactive Q&amp;A platform for students going abroad. Get personal travel tips and recommendations from students in your college community.</p>
+          <p>{{ link_to_route('signup.store', 'Sign up', null, ['class' => 'btn btn-lg btn-warning']); }}
+            {{ link_to_route('login', 'Login', null, ['class' => 'btn btn-lg btn-default']); }}
+          </p>    </div>
   </div>
+
+
+    <div class="item">
+      <img src="/img/hero2.jpg" alt="...">
+ <div class="carousel-caption">
+    <h3>Your classmates can help</h3>
+    <p>Find out what to do from your classmates who have been there already.</p>
+    </div>
+  </div>
+
+      <div class="item">
+      <img src="/img/hero3.jpg" alt="...">
+ <div class="carousel-caption">
+    <h3>Let your voice be heard</h3>
+
+    </div> 
+  </div>
+</div>
 
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">

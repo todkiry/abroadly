@@ -31,3 +31,7 @@ html {
 .col-centered {
   float: none;
   margin: 0 auto; }
+
+.carousel-caption {
+  text-align: left;
+  bottom: 300px; }
