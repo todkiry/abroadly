@@ -68,8 +68,8 @@ class ProfilesController extends \BaseController {
 	public function edit($id)
 	{
 		$user = User::findOrFail($id);
-
-		return View::make('profiles.edit')->withUser($user);
+		$places = Place::lists('place', 'id');
+		return View::make('profiles.edit', ['user'=>$user, 'places'=>$places]);
 	}
 
 	/**
@@ -87,10 +87,13 @@ class ProfilesController extends \BaseController {
 
 		$user->profile->fill($input)->save();
 
-		$profile = $user->profile;
+		#$selectedplaces = Input::get('place');
 
-		$place = Place::find(1);
-		$profile->places->associate($place);
+		/*foreach($selectedplaces as $place) {
+			$place = Place::find($place);
+			$user->profile->places()->save($place);
+		}*/	
+
 
 		return Redirect::route('profile.show', $user->id);
 	

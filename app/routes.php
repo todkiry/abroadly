@@ -81,14 +81,6 @@ Route::get('data', function() {
 });
 
 
-# send mail
-Route::get('sendmail', function()
-{
-	Mail::send('emails.question', [], function($message)
-	{
-		$message->to('todkiry@gmail.com')->subject('Test');
-	});
-});
 
 
 

@@ -41,21 +41,21 @@ class QuestionsController extends \BaseController {
 		$question->place()->associate($place);
 
 		$user = Auth::user();
-		$question->place()->associate($place);
 		$question = $user->questions()->save($question);
 
 
-		
 
-		# Send Mail
-		/*
-		$data = [];
+		$data = [
+			'username'=> $question->user->name,
+			'question'=> $question->question,
+		];
+
+		# Send Email
 		Mail::send('emails.question', $data, function($message)
 		{
-			$message->to('todkiry@gmail.com')
-					->subject('welcome');
+			$message->to('todkiry@gmail.com')->subject('Test');
 		});
-		*/
+
 
 		return Redirect::route('profile.show', $user->id);
 

@@ -8,11 +8,10 @@
 	{{ Form::open(['route' => 'questions.store']) }}
 
 
-
-
-
 		<div class="form-group">
+      {{ Form::label('place', 'I have a question about') }}
  			{{ Form::select('place', $places,null, ['class'=>'form-control']) }}
+
 		</div>
 
 		<div class="form-group">

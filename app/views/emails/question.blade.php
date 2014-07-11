@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<h2>Question Asked</h2>
+		<h2>{{ $username }} asked a question</h2>
 
 		<div>
 		</div>

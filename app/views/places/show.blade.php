@@ -35,7 +35,7 @@
 @endforeach
 </div>
 
-  <p>{{ link_to_route('questions.create', 'Ask a Question', $place->id, ['class'=>'btn btn-primary btn-lg btn-warning']) }}</p>
+  <p>{{ link_to_route('questions.create', 'Ask a Question', ['id'=>$place->id], ['class'=>'btn btn-primary btn-lg btn-warning']) }}</p>
 
 
 @stop
