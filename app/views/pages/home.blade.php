@@ -17,7 +17,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="/img/hero1.jpg" alt="...">
+      <img src="/img/hero0.jpg" alt="...">
  <div class="carousel-caption">
     <h3>Going abroad for the first time?</h3>
     <p>The interactive Q&amp;A platform for students going abroad. Get personal travel tips and recommendations from students in your college community.</p>
