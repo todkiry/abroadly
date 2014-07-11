@@ -1,0 +1,38 @@
+body {
+	padding-top: 100px;
+	transition: all 1s;
+    background: url(/img/bg.jpg) no-repeat  fixed; 
+	background-size: 100%;
+	}
+html {
+	
+	background:transparent;
+}
+
+.main-container {
+	padding: 30px;
+	padding-top:10px;
+	margin-bottom: 30px;
+	color: inherit;
+	background-color: #eee;
+	overflow:auto;
+}
+
+.navbar {
+	min-height: 86px;
+}
+
+.navbar-nav {
+	margin-top:19px;
+}
+
+.navbar-toggle {
+	margin-top:35px;
+	margin-bottom:25px;
+
+}
+.col-centered 
+{
+    float: none;
+    margin: 0 auto;
+}
