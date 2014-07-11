@@ -49,7 +49,7 @@
 </div>
 
 	    @else
-			<p>Welcome, {{ Auth::user()->name }}</p>
+			<h2>Welcome, {{ Auth::user()->name }}</h2>
 
       <p>Let's get started! Please ask your first question.</p>
 
