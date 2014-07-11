@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'abroadly@abroad.ly', 'name' => 'Abroadly App'),
+	'from' => array('address' => 'abroadly@abroadly.in', 'name' => 'Abroadly App'),
 
 	/*
 	|--------------------------------------------------------------------------
