@@ -45,7 +45,7 @@ class PlacesController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$place = Place::findOrFail($id)->orderBy('place');
+		$place = Place::findOrFail($id);
 
 		return View::make('places.show', ['place'=>$place]);
 	}
