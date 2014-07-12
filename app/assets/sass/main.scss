@@ -4,6 +4,11 @@ body {
     background: url(/img/bg.jpg) no-repeat  fixed; 
 	background-size: 100%;
 	}
+
+@media all and (max-width:599px){
+    body{background:#fff}
+}
+
 html {
 	
 	background:transparent;
