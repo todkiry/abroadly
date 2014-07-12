@@ -27,7 +27,7 @@
   		{{ $question->question }}</p>
 <br />
 @if(Auth::user()->email != $question->user->email)
-      <p>{{ link_to_route('questions.edit', 'Answer', ['q'=>$question->id], ['class'=>'btn btn-default']) }}
+      <p>{{ link_to_route('questions.create', 'Answer', ['q'=>$question->id], ['class'=>'btn btn-default']) }}
 @else
 <p>{{ link_to_route('questions.destroy', 'Edit', [], ['class'=>'btn btn-default']) }}</p>
 @endif
