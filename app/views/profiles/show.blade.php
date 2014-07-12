@@ -16,12 +16,32 @@
 
 
 <h3>Questions</h3>
-<ul class="list-unstyled">
+<div class="panel-group" id="accordion">
+
 @foreach($questions=$user->questions as $question)
 
-<li>{{ link_to("/questions/{$question->id}", $question->header) }}</li>
+
+ <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#{{$question->id}}">
+          {{ $question->header }}
+          <span class="pull-right label label-default">{{$question->place->place }}</span>
+        </a>
+      </h4>
+    </div>
+    <div id="{{$question->id}}" class="panel-collapse collapse">
+      <div class="panel-body">
+      	{{ $question->question }}
+
+
+      </div>
+    </div>
+  </div>
+
+
 @endforeach
-</ul>
+</div>
 
 @if(Auth::user()->id == $user->id)
 <p>{{ link_to_route('profile.edit', 'Edit profile', Auth::user()->id, ['class'=>'btn btn-primary']) }}</p>

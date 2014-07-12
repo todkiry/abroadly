@@ -22,11 +22,15 @@
     <h3 class="panel-title">{{ link_to("/questions/{$question->id}", $question->header) }}</h3>
   </div>
   <div class="panel-body">
-  		<p><em>by {{ $question->user->name; }}</em><br />
+  		<p><em>by {{ link_to("/profiles/{$question->user->id}", $question->user->name); }}</em><br />
 
   		{{ $question->question }}</p>
 <br />
-  		<p>{{ link_to_route('answers.create', 'Answer', ['q'=>$question->id], ['class'=>'btn btn-default']) }}
+@if(Auth::user()->email != $question->user->email)
+      <p>{{ link_to_route('questions.edit', 'Answer', ['q'=>$question->id], ['class'=>'btn btn-default']) }}
+@else
+<p>{{ link_to_route('questions.destroy', 'Edit', [], ['class'=>'btn btn-default']) }}</p>
+@endif
 </p>
 
   </div>
@@ -35,7 +39,6 @@
 @endforeach
 </div>
 
-  <p>{{ link_to_route('questions.create', 'Ask a Question', ['id'=>$place->id], ['class'=>'btn btn-primary btn-lg btn-warning']) }}</p>
 
 
 @stop

@@ -10,18 +10,18 @@
 
 		<div class="form-group">
       {{ Form::label('place', 'I have a question about') }}
- 			{{ Form::select('place', $places,null, ['class'=>'form-control']) }}
+ 			{{ Form::select('place', $places,null, ['class'=>'form-control input-lg']) }}
 
 		</div>
 
 		<div class="form-group">
-				{{ Form::label('header', 'Header') }}
-				{{ Form::text('header', null, ['class'=>'form-control'])}}
+				{{ Form::label('header', 'Header') }} 
+				{{ Form::text('header', null, ['class'=>'form-control input-lg'])}}
 		</div>
 
 		<div class="form-group">
 				{{ Form::label('question', 'Question') }}
-				{{ Form::textarea('question', null, ['class'=>'form-control'])}}
+				{{ Form::textarea('question', null, ['class'=>'form-control '])}}
 		</div>
 
  <div class="form-group">

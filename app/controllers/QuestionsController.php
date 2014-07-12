@@ -62,7 +62,7 @@ class QuestionsController extends \BaseController {
 		});
 
 
-		return Redirect::route('profile.show', $user->id);
+		return Redirect::route('places.show', $place->id);
 
 	}
 
