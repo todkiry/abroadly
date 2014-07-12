@@ -32,6 +32,9 @@
  <div class="carousel-caption">
     <h3>Your classmates can help</h3>
     <p>Find out what to do from your classmates who have been there already.</p>
+              <p>{{ link_to_route('signup.store', 'Sign up', null, ['class' => 'btn btn-lg btn-warning']); }}
+            {{ link_to_route('login', 'Login', null, ['class' => 'btn btn-lg btn-default']); }}
+          </p>
     </div>
   </div>
 
@@ -39,6 +42,10 @@
       <img src="/img/hero3.jpg" alt="...">
  <div class="carousel-caption">
     <h3>Let your voice be heard</h3>
+    <p>Help your classmates by providing recommendations. </p>
+              <p>{{ link_to_route('signup.store', 'Sign up', null, ['class' => 'btn btn-lg btn-warning']); }}
+            {{ link_to_route('login', 'Login', null, ['class' => 'btn btn-lg btn-default']); }}
+          </p>
 
     </div> 
   </div>
@@ -56,8 +63,10 @@
 	    @else
 			<h2>Welcome, {{ Auth::user()->name }}</h2>
 
-      <p>Let's get started! Please ask your first question.</p>
-
+      <p>Let's get started! </p>
+          <p>{{ link_to_route('questions.create', 'Ask Question', null, ['class' => 'btn btn-lg btn-warning']); }}  &nbsp;
+            {{ link_to_route('places.index', 'Explore Places', null, ['class' => 'btn btn-lg btn-default']); }}
+          </p>
 
         @endif
         		
